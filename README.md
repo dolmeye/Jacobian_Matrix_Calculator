@@ -119,16 +119,16 @@ result                     % Display numerical result at (pi, 1, 2)
 **Symbolic variables extracted:** `x`, `y`, `z`
 
 **Jacobian structure** (4 equations × 3 variables):
-$$
+$$\begin{align\\*}
 J = \begin{bmatrix} \frac{\partial f_1}{\partial x} & \frac{\partial f_1}{\partial y} & \frac{\partial f_1}{\partial z} \\ \frac{\partial f_2}{\partial x} & \frac{\partial f_2}{\partial y} & \frac{\partial f_2}{\partial z} \\ \frac{\partial f_3}{\partial x} & \frac{\partial f_3}{\partial y} & \frac{\partial f_3}{\partial z} \\ \frac{\partial f_4}{\partial x} & \frac{\partial f_4}{\partial y} & \frac{\partial f_4}{\partial z} \end{bmatrix}
-$$
+\end{align\\*}$$
 
 
 ------
 
 ### Notes
 
-- The function uses MATLAB's **Symbolic Math Toolbox** (`str2sym`, `symvar`, `diff`, `subs`, `matlabFunction`).
+- The function uses MATLAB's Symbolic Math Toolbox (`str2sym`, `symvar`, `diff`, `subs`, `matlabFunction`).
 - Variable ordering follows `symvar`'s alphabetical convention.
 - If the Jacobian has no symbolic variables remaining after substitution, `double(J)` is called directly.
 - Row/column orientation: input `f` is automatically transposed if needed to ensure a column vector of symbolic expressions.
