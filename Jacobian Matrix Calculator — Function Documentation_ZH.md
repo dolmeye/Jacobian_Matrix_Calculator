@@ -1,4 +1,4 @@
-# Jacobian 矩阵计算器 — 函数文档
+# Jacobian 矩阵计算器
 
 ### 概述
 
